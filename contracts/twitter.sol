@@ -26,7 +26,7 @@ contract Twitter{
     }
 
     mapping(uint256 => tweet) Tweet; // id to tweet struct
-    mapping(uint256 => user ) User; // adress to user stgruct
+    mapping(uint256 => user ) User; // address to user struct
 
     event tweetCreated(
       adress tweeter,
