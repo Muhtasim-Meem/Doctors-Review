@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-contract Twitter{
+contract Twitter {
     address public owner;
     uint256 private counter; // represent ID of a tweet
 
-    constructor(){
+    constructor() {
         owner = msg.sender;
         counter = 0;
     }
-    
-    struct tweet{
+
+    struct tweet {
         address tweeter;
         uint256 id;
         string tweetText;
@@ -19,7 +19,7 @@ contract Twitter{
 
     }
 
-    struct user{
+    struct user {
         string name;
         string bio;
         string profileImg;
@@ -46,7 +46,7 @@ contract Twitter{
     
     // Method to add a tweet
     
-    function addTweet(string memory tweetText,string memory tweetImg) public payable{
+    function addTweet(string memory tweetText,string memory tweetImg) public payable {
         require(msg.value == (0.01 ether),"Please submit 0.01 MATIC");
         tweet storage newTweet = Tweets[counter];
         newTweet.tweetText = tweetText;
@@ -67,14 +67,14 @@ contract Twitter{
     uint countTweets = 0;
 
     for (uint i=0; i<counter; i++){
-        if (Tweet[i].isDeleted == false){
+        if (Tweet[i].isDeleted == false) {
             temporary[countTweets] = Tweets[i];
             countTweets++;
         }
     }
 
     tweet[] memory result = new tweet [](countTweets);
-    for (uint i=0; i<countTweets;i++){
+    for (uint i=0; i<countTweets;i++) {
         result[i] = temporary[i];
     }
     return result;
@@ -83,26 +83,26 @@ contract Twitter{
 
     // Method to get all tweets of a particular user 
 
-    function getMyTweets() external view returns (tweet[] memory){
+    function getMyTweets() external view returns (tweet[] memory) {
         tweet[] memory temporary = new tweet[](counter);
         uint countMyTweets = 0;
 
         for(uint i=0;i<counter;i++){
-            if(Tweet[i].tweeter == msg.sender && Tweeets[i].isDeleted == false ){
+            if(Tweet[i].tweeter == msg.sender && Tweeets[i].isDeleted == false ) {
                 temporary[countMyTweets] = Tweets[i];
                 countMyTweets++;
             }
     } 
     
     tweet[] memory result = new tweet[](countMyTweets);
-    for(uint i=0;i<countMyTweets;i++){
+    for(uint i=0;i<countMyTweets;i++) {
         result[i] = temporary[i];
     }
     return result;
     }
 
     // Method to get a particulat tweet
-        function getTweet (uint256 id) public view returns (string memory, string memory, address){ 
+        function getTweet (uint256 id) public view returns (string memory, string memory, address) { 
         require(id < counter, "No such Tweet");
         tweet storage t = Tweets[id];
         require(t.isDeleted == false,"Tweet is deleted");
