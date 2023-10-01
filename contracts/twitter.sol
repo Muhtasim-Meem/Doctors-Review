@@ -30,12 +30,12 @@ contract Twitter {
     mapping(uint256 => user ) User; // address to user struct
 
     event tweetCreated(
-      address tweeter,
-      uint256 id,
-      string tweetText,
-      string tweetImg,
-      bool isDeleted,
-      uint256 timestamp
+        address tweeter,
+        uint256 id,
+        string tweetText,
+        string tweetImg,
+        bool isDeleted,
+        uint256 timestamp
     );
 
     event TweetDeleted(
@@ -63,21 +63,21 @@ contract Twitter {
     //Method to fetch all tweets
 
     function getAllTweets() public view returns (tweet [] memory) {
-    tweet[] memory temporary = new tweet[](counter);
-    uint countTweets = 0;
+        tweet[] memory temporary = new tweet[](counter);
+        uint countTweets = 0;
 
-    for (uint i=0; i<counter; i++){
-        if (Tweet[i].isDeleted == false) {
-            temporary[countTweets] = Tweets[i];
-            countTweets++;
+        for (uint i=0; i<counter; i++){
+            if (Tweet[i].isDeleted == false) {
+                temporary[countTweets] = Tweets[i];
+                countTweets++;
+            }
         }
-    }
 
-    tweet[] memory result = new tweet [](countTweets);
-    for (uint i=0; i<countTweets;i++) {
-        result[i] = temporary[i];
-    }
-    return result;
+        tweet[] memory result = new tweet [](countTweets);
+        for (uint i=0; i<countTweets;i++) {
+            result[i] = temporary[i];
+        }
+        return result;
     }
 
 
