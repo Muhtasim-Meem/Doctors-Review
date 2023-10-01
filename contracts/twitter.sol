@@ -9,6 +9,7 @@ contract Twitter{
         owner = msg.sender;
         counter = 0;
     }
+    
     struct tweet{
         address tweeter;
         uint256 id;
