@@ -67,7 +67,7 @@ contract Twitter {
         uint countTweets = 0;
 
         for (uint i=0; i<counter; i++){
-            if (Tweet[i].isDeleted == false) {
+            if (Tweets[i].isDeleted == false) {
                 temporary[countTweets] = Tweets[i];
                 countTweets++;
             }
