@@ -46,17 +46,17 @@ contract Twitter{
     // Method to add a tweet
     
     function addTweet(string memory tweetText,string memory tweetImg) public payable{
-    require(msg.value == (0.01 ether),"Please submit 0.01 MATIC");
-    tweet storage newTweet = Tweets[counter];
-    newTweet.tweetText = tweetText;
-    newTweet.tweetImg  = tweetImg;
-    newTweet.tweeter = msg.sender;
-    newTweet.id = counter;
-    newTweet.isDeleted = false;
-    newTweet.timestamp = block.timestamp;
-    emit tweetCreated(msg.sender, counter, tweetText, tweetImg, false, block.timestamp);
-    counter++;
-    payable(owner).transfer(msg.value);
+        require(msg.value == (0.01 ether),"Please submit 0.01 MATIC");
+        tweet storage newTweet = Tweets[counter];
+        newTweet.tweetText = tweetText;
+        newTweet.tweetImg  = tweetImg;
+        newTweet.tweeter = msg.sender;
+        newTweet.id = counter;
+        newTweet.isDeleted = false;
+        newTweet.timestamp = block.timestamp;
+        emit tweetCreated(msg.sender, counter, tweetText, tweetImg, false, block.timestamp);
+        counter++;
+        payable(owner).transfer(msg.value);
     }
 
     //Method to fetch all tweets
@@ -83,14 +83,14 @@ contract Twitter{
     // Method to get all tweets of a particular user 
 
     function getMyTweets() external view returns (tweet[] memory){
-       tweet[] memory temporary = new tweet[](counter);
-       uint countMyTweets = 0;
+        tweet[] memory temporary = new tweet[](counter);
+        uint countMyTweets = 0;
 
-       for(uint i=0;i<counter;i++){
-        if(Tweet[i].tweeter == msg.sender && Tweeets[i].isDeleted == false ){
-            temporary[countMyTweets] = Tweets[i];
-            countMyTweets++;
-        }
+        for(uint i=0;i<counter;i++){
+            if(Tweet[i].tweeter == msg.sender && Tweeets[i].isDeleted == false ){
+                temporary[countMyTweets] = Tweets[i];
+                countMyTweets++;
+            }
     } 
     
     tweet[] memory result = new tweet[](countMyTweets);
