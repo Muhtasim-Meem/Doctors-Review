@@ -100,33 +100,33 @@ contract Twitter{
     return result;
     }
 
-   // Method to get a particulat tweet
-     function getTweet (uint256 id) public view returns (string memory, string memory, address){ 
-     require(id < counter, "No such Tweet");
-     tweet storage t = Tweets[id];
-     require(t.isDeleted == false,"Tweet is deleted");
-     return (t.tweetText, t.tweetImg,t.tweeter);
+    // Method to get a particulat tweet
+        function getTweet (uint256 id) public view returns (string memory, string memory, address){ 
+        require(id < counter, "No such Tweet");
+        tweet storage t = Tweets[id];
+        require(t.isDeleted == false,"Tweet is deleted");
+        return (t.tweetText, t.tweetImg,t.tweeter);
     }
 
     // Method to delete a Tweet
     function deleteTweet (uint tweetId, bool isDeleted) external {
-    require(Tweets [tweetId].tweeter == msg.sender, "You can only delete your own tweet");
-    Tweets[tweetId].isDeleted = isDeleted;
-    emit TweetDeleted (tweetId, isDeleted);
+        require(Tweets [tweetId].tweeter == msg.sender, "You can only delete your own tweet");
+        Tweets[tweetId].isDeleted = isDeleted;
+        emit TweetDeleted (tweetId, isDeleted);
     }
 
     // Method to update user details
 
     function updateUser(string memory newName, string memory newBio, string memory newProfileImg, string memory newProfileBanner) public {
-    user storage userData = Users [msg.sender]; 
-    userData.name = newName;
-    userData.bio = newBio;
-    userData.profileImg = newProfileImg; 
-    userData.profileBanner = newProfileBanner;
+        user storage userData = Users [msg.sender]; 
+        userData.name = newName;
+        userData.bio = newBio;
+        userData.profileImg = newProfileImg; 
+        userData.profileBanner = newProfileBanner;
     }
 
     // Method to get user detail
-    function getUser(address userAddress) public view returns (user memory){
+    function getUser(address userAddress) public view returns (user memory) {
        return Users[userAddress];
     }
 
