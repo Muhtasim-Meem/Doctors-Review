@@ -26,7 +26,7 @@ contract Twitter {
         string profileBanner;
     }
 
-    mapping(uint256 => tweet) Tweet; // id to tweet struct
+    mapping(uint256 => tweet) Tweets; // id to tweet struct
     mapping(uint256 => user ) User; // address to user struct
 
     event tweetCreated(
@@ -94,11 +94,11 @@ contract Twitter {
             }
         } 
     
-    tweet[] memory result = new tweet[](countMyTweets);
-    for(uint i=0;i<countMyTweets;i++) {
-        result[i] = temporary[i];
-    }
-    return result;
+        tweet[] memory result = new tweet[](countMyTweets);
+        for(uint i=0;i<countMyTweets;i++) {
+            result[i] = temporary[i];
+        }
+        return result;
     }
 
     // Method to get a particulat tweet
