@@ -16,6 +16,7 @@ contract Twitter {
         string tweetText;
         bool isDeleted;
         uint256 timestam;
+        uint256 timestamp;
         string tweetImg;
     }
 
