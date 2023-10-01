@@ -16,7 +16,7 @@ contract Twitter {
         string tweetText;
         bool isDeleted;
         uint256 timestam;
-
+        string tweetImg;
     }
 
     struct user {
