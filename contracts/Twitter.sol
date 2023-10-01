@@ -88,7 +88,7 @@ contract Twitter {
         uint countMyTweets = 0;
 
         for(uint i=0;i<counter;i++) {
-            if(Tweet[i].tweeter == msg.sender && Tweeets[i].isDeleted == false ) {
+            if(Tweets[i].tweeter == msg.sender && Tweets[i].isDeleted == false ) {
                 temporary[countMyTweets] = Tweets[i];
                 countMyTweets++;
             }
