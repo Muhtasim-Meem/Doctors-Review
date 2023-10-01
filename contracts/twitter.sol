@@ -62,7 +62,7 @@ contract Twitter {
 
     //Method to fetch all tweets
 
-    function getAllTweets() public view returns (tweet [] memory){
+    function getAllTweets() public view returns (tweet [] memory) {
     tweet[] memory temporary = new tweet[](counter);
     uint countTweets = 0;
 
@@ -87,12 +87,12 @@ contract Twitter {
         tweet[] memory temporary = new tweet[](counter);
         uint countMyTweets = 0;
 
-        for(uint i=0;i<counter;i++){
+        for(uint i=0;i<counter;i++) {
             if(Tweet[i].tweeter == msg.sender && Tweeets[i].isDeleted == false ) {
                 temporary[countMyTweets] = Tweets[i];
                 countMyTweets++;
             }
-    } 
+        } 
     
     tweet[] memory result = new tweet[](countMyTweets);
     for(uint i=0;i<countMyTweets;i++) {
