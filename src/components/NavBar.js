@@ -54,7 +54,7 @@ const NavBar = ({ page }) => {
             <ul className="flex justify-between items-center w-[70%] text-[var(--green-color)]">
               <li>
                 <NavLink
-                  to="/Aafia/Home"
+                  to="/HealthPulse/Home"
                   className={pageActive === "Home" ? "active" : "unactive"}
                   onClick={() => setPageActive("Home")}
                 >
@@ -63,7 +63,7 @@ const NavBar = ({ page }) => {
               </li>
               <li>
                 <NavLink
-                  to="/Aafia/Consultation"
+                  to="/HealthPulse/Consultation"
                   className={
                     pageActive === "Consultation" ? "active" : "unactive"
                   }
@@ -74,7 +74,7 @@ const NavBar = ({ page }) => {
               </li>
               <li>
                 <NavLink
-                  to="/Aafia/Review"
+                  to="/HealthPulse/Review"
                   className={pageActive === "Review" ? "active" : "unactive"}
                   onClick={() => setPageActive("Review")}
                 >
@@ -83,7 +83,7 @@ const NavBar = ({ page }) => {
               </li>
               <li>
                 <NavLink
-                  to="/Aafia/Appointment"
+                  to="/HealthPulse/Appointment"
                   className={pageActive === "Dating" ? "active" : "unactive"}
                   onClick={() => setPageActive("Dating")}
                 >
@@ -93,7 +93,7 @@ const NavBar = ({ page }) => {
               {!isDoctor && (
                 <li>
                   <NavLink
-                    to="/Aafia/Advices"
+                    to="/HealthPulse/Advices"
                     className={pageActive === "Advices" ? "active" : "unactive"}
                     onClick={() => setPageActive("Advices")}
                   >

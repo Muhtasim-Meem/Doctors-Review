@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
 
-const Aafia = () => {
+const HealthPulse = () => {
   return (
     <div>
       <NavBar />
@@ -11,4 +11,4 @@ const Aafia = () => {
   );
 };
 
-export default Aafia;
+export default HealthPulse;
