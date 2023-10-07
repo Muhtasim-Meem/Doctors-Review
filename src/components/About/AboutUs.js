@@ -13,7 +13,7 @@ const AboutUs = () => {
       <NavBar page="about" />
       <div className="abouts pt-20 bg-[url('/src/global/images/young-handsome-physician-medical-robe-with-stethoscope.jpg')] bg-cover w-full h-screen">
         <p className="w-[750px] font-[Caprasimo] p-28 pb-12 pl-20 text-7xl text-[var(--green-color)]">
-          Providing Best Medical Care
+          providing Best Medical Care
         </p>
         <p
           style={{ lineHeight: 1.7 }}
@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div class="services">
         <div className="mx-auto px-20">
           <div class="main-header">
-            <h2 className="text-[var(--gray-color)]">services</h2>
+            <h2 className="text-[var(--gray-color)]">Services</h2>
             <p>
               Caring For The Health, All Aspects Of Medical Practice And Well
               Being Of Family.
