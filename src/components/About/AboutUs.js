@@ -96,7 +96,7 @@ const AboutUs = () => {
             <i class="fab fa-linkedin"></i>
           </div>
           <p class="copyright">
-            © 2023 <span>Aafia</span> All Right Reserved
+            © 2023 <span>HealthPulse </span> All Right Reserved
           </p>
         </div>
       </div>
