@@ -88,7 +88,7 @@ const AboutUs = () => {
       </div>
       <div class="footer">
         <div class="container">
-          <p>Find us on social media</p>
+          <p>Follow us on social media</p>
           <div class="social-icons">
             <i color="blue" class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
