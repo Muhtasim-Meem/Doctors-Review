@@ -71,7 +71,7 @@ const Advices = () => {
           <div className="w-3 h-3 rounded-full bg-[var(--gray-color)] mt-2"></div>
           <p className="w-[460px]">
             Follow these recommendations to maintain your health and wellbeing.
-            If you have any questions or concerns, don't hesitate to contact
+            If you have any questions or concerns, don't hesitate to contact with 
             your healthcare provider.
           </p>
         </div>
