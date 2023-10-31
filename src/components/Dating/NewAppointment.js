@@ -20,7 +20,7 @@ const NewAppointment = () => {
       >
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Cardiology")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Cardiology")}
         >
           <img src={heart} alt="" className="w-14 ml-[40%]" />
           {/* قلبية */}
@@ -34,7 +34,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Ophthalmology")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Ophthalmology")}
         >
           <img src={ophthalmology} alt="" className="w-14 ml-[40%]" />
           {/* عينية */}
@@ -49,7 +49,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Gastroenterology")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Gastroenterology")}
         >
           <img src={gastroenterology} alt="" className="w-14 ml-[40%]" />
           {/* هضمية */}
@@ -64,7 +64,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Neurology")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Neurology")}
         >
           <img src={neurology} alt="" className="w-14 ml-[40%]" />
           {/* عصبية */}
@@ -78,7 +78,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Gynecology")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Gynecology")}
         >
           <img src={gynecology} alt="" className="w-14 ml-[40%]" />
           {/* نسائية */}
@@ -93,7 +93,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Orthopedics")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Orthopedics")}
         >
           <img src={orthopedics} alt="" className="w-14 ml-[40%]" />
           {/* عضمية */}
@@ -109,7 +109,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Pediatrics")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Pediatrics")}
         >
           <img src={pediatrics} alt="" className="w-14 ml-[40%]" />
           {/* اظفال */}
@@ -124,7 +124,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/Psychiatry")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/Psychiatry")}
         >
           <img src={Psychiatry} alt="" className="w-14 ml-[40%]" />
           {/* نفسي */}
@@ -139,7 +139,7 @@ const NewAppointment = () => {
         </div>
         <div
           class="feat"
-          onClick={() => nav("/Aafia/DoctorsAppointment/General")}
+          onClick={() => nav("/HealthPulse/DoctorsAppointment/General")}
         >
           <img src={other} alt="" className="w-14 ml-[40%]" />
           {/* عام */}
