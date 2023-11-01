@@ -41,7 +41,7 @@ const Login = () => {
           else if (!res.data.data.user.phone_number)
             nav("/CompleteProfileInfo");
           else {
-            nav("/Aafia/Home");
+            nav("/HealthPulse/Home");
             dispatch(authAction.loginHandler(true));
           }
         }, [3040]);
