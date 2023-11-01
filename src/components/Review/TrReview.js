@@ -58,7 +58,7 @@ const TrReview = ({ review, onDelete, onReply, onEdit, isDoctor }) => {
         )}
         {isDoctor && (
           <div className="flex justify-center items-center w-[50%] m-auto">
-            <NavLink to={`/Aafia/RevRepley/${review.id}`}>
+            <NavLink to={`/HealthPulse/RevRepley/${review.id}`}>
               <img
                 className="w-6 cursor-pointer"
                 src={review.done ? edit : details}

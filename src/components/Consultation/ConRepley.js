@@ -312,7 +312,7 @@ const ConRepley = () => {
               </button>
               <button
                 onClick={() => {
-                  nav("/Aafia/Consultation");
+                  nav("/HealthPulse/Consultation");
                 }}
                 className="border border-[var(--gray-color)] px-[30px] py-[8px] outline-none cursor-pointer font-bold rounded-lg text-[var(--gray-color)] "
               >

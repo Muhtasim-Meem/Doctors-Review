@@ -45,7 +45,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<RedirectPage />}></Route>
+      
+        <Route path="/"  element={<RedirectPage />}></Route> 
         {!isLoggedIn && <Route path="/AboutUs" element={<AboutUs />}></Route>}
         {!isLoggedIn && <Route path="/Login" element={<Login />}></Route>}
         {!isLoggedIn && <Route path="/Register" element={<Register />}></Route>}
@@ -71,6 +72,7 @@ function App() {
           <Route path="/ForgotPassword" element={<ForgotPassword />}></Route>
         )}
         {isLoggedIn && (
+
           <Route path="/HealthPulse" element={<HealthPulse />}>
             <Route path="Home" element={<Home />}></Route>
             <Route path="Consultation" element={<Consultation />}></Route>

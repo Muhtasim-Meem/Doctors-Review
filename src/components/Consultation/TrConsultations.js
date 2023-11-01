@@ -61,7 +61,7 @@ const TrConsultations = ({
                 alt=""
               />
             )}
-            <NavLink to={`/Aafia/ConReview/${consultation.id}`}>
+            <NavLink to={`/HealthPulse/ConReview/${consultation.id}`}>
               <img className="w-6 cursor-pointer" src={review} alt="" />
             </NavLink>
           </div>
@@ -81,7 +81,7 @@ const TrConsultations = ({
         )}
         {isDoctor && (
           <div className="flex justify-center items-center w-[50%] m-auto">
-            <NavLink to={`/Aafia/ConRepley/${consultation.id}`}>
+            <NavLink to={`/HealthPulse/ConRepley/${consultation.id}`}>
               <img
                 className="w-6 cursor-pointer"
                 src={consultation.done ? edit : details}
