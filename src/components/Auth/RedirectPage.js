@@ -9,7 +9,7 @@ const RedirectPage = () => {
 
   useEffect(() => {
     if (!!token) {
-      if (user ? !!user?.phone_number : false) nav("/Aafia/Home");
+      if (user ? !!user?.phone_number : false) nav("/HealthPulse/Home");
       else nav("/CompleteProfileInfo");
     } else {
       if (user ? !user?.email_verified : false) nav("/CodeVerification");
