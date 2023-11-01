@@ -8,3 +8,7 @@ body{
   margin: 0;
   background-color: var(--p-color);
 }
+*{
+  user-select: none;
+  -webkit-user-select: none;
+}

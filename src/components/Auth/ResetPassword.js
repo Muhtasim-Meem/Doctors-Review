@@ -36,7 +36,7 @@ const ResetPassword = () => {
             icon: "success"
           });
           setTimeout(() => {
-            nav("/Aafia/Home");
+            nav("/HealthPulse/Home");
           }, [3040]);
         })
         .catch((err) => {

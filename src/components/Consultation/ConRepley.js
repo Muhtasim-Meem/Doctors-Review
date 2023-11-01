@@ -96,7 +96,7 @@ const ConRepley = () => {
           icon: "success"
         });
         setTimeout(() => {
-          nav("/Aafia/Consultation");
+          nav("/HealthPulse/Consultation");
         }, [3040]);
       })
       .catch((err) => {

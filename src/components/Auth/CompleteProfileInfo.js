@@ -165,7 +165,7 @@ const CompleteProfileInfo = () => {
         setTimeout(() => {
           dispatch(authAction.loginHandler(true));
           if (isDoctor) nav("/AboutUs");
-          else nav("/Aafia/Home");
+          else nav("/HealthPulse/Home");
         }, [3040]);
       })
       .catch((err) => {

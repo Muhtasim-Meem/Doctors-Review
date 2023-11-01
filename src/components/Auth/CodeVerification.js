@@ -39,7 +39,7 @@ const CodeVerification = () => {
         });
         setTimeout(() => {
           if (!res.data.data.user.phone_number) nav("/CompleteProfileInfo");
-          else nav("/Aafia/Home");
+          else nav("/HealthPulse/Home");
         }, [3040]);
       })
       .catch((err) => {

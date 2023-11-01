@@ -288,7 +288,7 @@ const DoctorsAppointment = () => {
               Submit
             </button> */}
           <button
-            onClick={() => nav("/Aafia/Appointment")}
+            onClick={() => nav("/HealthPulse/Appointment")}
             className="border border-[var(--gray-color)] px-[30px] py-[8px] outline-none cursor-pointer font-bold rounded-lg text-[var(--gray-color)] "
           >
             Back
