@@ -96,7 +96,7 @@ const RevRepley = () => {
           icon: "success"
         });
         setTimeout(() => {
-          nav("/Aafia/Review");
+          nav("/HealthPulse/Review");
         }, [3040]);
       })
       .catch((err) => {
@@ -314,7 +314,7 @@ const RevRepley = () => {
               </button>
               <button
                 onClick={() => {
-                  nav("/Aafia/Review");
+                  nav("/HealthPulse/Review");
                 }}
                 className="border border-[var(--gray-color)] px-[30px] py-[8px] outline-none cursor-pointer font-bold rounded-lg text-[var(--gray-color)] "
               >
