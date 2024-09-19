@@ -23,8 +23,8 @@ doctors based on their experiences. It provides a way for users to share feedbac
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/project-name.git
-    cd project-name
+    git clone https://github.com/Muhtasim-Meem/Doctors-Review.git
+    cd Doctors-Review
     ```
 
 2. **Install dependencies**:
